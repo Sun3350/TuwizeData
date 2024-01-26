@@ -1,7 +1,11 @@
 'use client'
 import React from 'react';
 
-const DownloadButton = ({ downloadUrl }) => {
+interface DownloadButtonProps {
+  downloadUrl: string;
+}
+
+const DownloadButton: React.FC<DownloadButtonProps> = ({ downloadUrl }) => {
   const handleDownloadClick = () => {
     const link = document.createElement('a');
     link.href = downloadUrl;
@@ -18,8 +22,8 @@ const DownloadButton = ({ downloadUrl }) => {
   );
 };
 
-const App = () => {
-  const downloadUrl = 'https://expo.dev/artifacts/eas/tNP9AycPCUuCWb4VjiMRvZ.apk'; // Replace with your app's actual download URL
+const App: React.FC = () => {
+  const downloadUrl = 'https://github.com/Sun3350/TuwizeData/raw/1e785a3120461e89410c39384bd3886658326705/TuwizeData.apk'; // Replace with your app's actual download URL
 
   return (
     <div className='container'>
