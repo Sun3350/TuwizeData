@@ -32,6 +32,7 @@ button{
   background-color: green;
   color: white;
   border-radius: 6px;
+  margin-top: 10px;
 }
 .container{
   display: flex;
@@ -39,7 +40,28 @@ button{
   justify-content: center;
   align-items: center;
 }
+.div-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:1px solid green;
+  padding: 10px;
+  border-radius: 10px;
+}
 h1{
   font-size: 30px;
   font-weight: 600;
+}
+.header-container{
+  background-color:white;
+  color: green;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image{
+  width: 100px;
+  height: 100%;
 }

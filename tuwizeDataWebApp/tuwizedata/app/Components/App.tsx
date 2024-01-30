@@ -16,18 +16,22 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({ downloadUrl }) => {
   };
 
   return (
-    <button onClick={handleDownloadClick}>
+    <button onClick={handleDownloadClick} >
       Download TuwizeData App
     </button>
   );
 };
 
 const App: React.FC = () => {
-  const downloadUrl = 'https://github.com/Sun3350/TuwizeData/raw/1e785a3120461e89410c39384bd3886658326705/TuwizeData.apk'; // Replace with your app's actual download URL
+  const downloadUrl = 'https://github.com/Sun3350/TuwizeData/raw/main/TuwizeData.apk'; 
 
   return (
     <div className='container'>
+      <div className='div-container'>
       <h1>Welcome to TuwizeData</h1>
+      <p>For a Better use and a great experience with a smooth transaction Kindly Download The TuwizeData App Only for andriod User</p>
+      </div>
+      
       <DownloadButton downloadUrl={downloadUrl} />
     </div>
   );
